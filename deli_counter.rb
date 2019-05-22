@@ -21,3 +21,16 @@ end
 def now_serving (katz_deli)
   katz_deli != []? (puts "Currently serving #{katz_deli.shift}."): (puts "There is nobody waiting to be served!")
 end
+
+
+# def line (katz_deli)
+#   kd = []
+#   if katz_deli == []
+#     puts "The line is currently empty."
+#   else
+#     katz_deli.each.with_index(1) do |name, index|
+#       kd.push("#{index}. #{name}")
+#     end
+#     puts "The line is currently: #{kd.join(" ")}"
+#   end
+# end
