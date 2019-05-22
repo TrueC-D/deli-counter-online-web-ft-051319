@@ -5,10 +5,11 @@ def line (katz_deli)
   if katz_deli == []
     puts "The line is currently empty."
   else
+    base_string = "The line is currently:"
     katz_deli.each.with_index(1) do |name, index|
-      kd.push("#{index}. #{name}")
+      base_string  + "#{index}. #{name}"
     end
-    puts "The line is currently: #{kd.join(" ")}"
+    
   end
 end
 
